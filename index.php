@@ -1,7 +1,8 @@
 <?php
     session_start();
     include 'geekhaven/auth.php';
-    require "./database/member_info.php";
+    $connection = mysqli_connect("localhost","root","");
+    mysqli_select_db($connection,'geekhav');
 ?>
 <html lang="en">
 <head>
